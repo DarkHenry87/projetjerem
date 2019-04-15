@@ -1,0 +1,155 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<display-name>TestServlet</display-name>
+		<description></description>
+		<servlet-class>fr.formation.inti.controller.TestServlet</servlet-class>
+
+		
+	</servlet>
+	<servlet>
+		<servlet-name>TestServletDeux</servlet-name>
+		<display-name>TestServletDeux</display-name>
+		<description></description>
+		<servlet-class>fr.formation.inti.controller.TestServletDeux</servlet-class>
+		
+		<init-param>
+            <param-name>emailContact</param-name>
+            <param-value>abcd@gmail.com</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pwd</param-name>
+            <param-value>123456</param-value>
+        </init-param>
+		
+	</servlet>
+	<servlet>
+		<servlet-name>TestServletSql</servlet-name>
+		<display-name>TestServletSql</display-name>
+		<description></description>
+		<servlet-class>fr.formation.inti.controller.TestServletDeux</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TestServletBase</servlet-name>
+		<display-name>TestServletBase</display-name>
+		<description></description>
+		<servlet-class>fr.formation.inti.controller.TestServletBase</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>A</servlet-name>
+		<display-name>A</display-name>
+		<description></description>
+		<servlet-class>fr.formation.inti.controller.A</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>B</servlet-name>
+		<display-name>B</display-name>
+		<description></description>
+		<servlet-class>fr.formation.inti.controller.B</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>servletAfficher</servlet-name>
+		<display-name>servletAfficher</display-name>
+		<description></description>
+		<servlet-class>Servlets.servletAfficher</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>session</servlet-name>
+		<display-name>session</display-name>
+		<description></description>
+		<servlet-class>Servlets.session</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteEmployee</servlet-name>
+		<display-name>DeleteEmployee</display-name>
+		<description></description>
+		<servlet-class>Servlets.DeleteEmployee</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateEmployee</servlet-name>
+		<display-name>UpdateEmployee</display-name>
+		<description></description>
+		<servlet-class>Servlets.UpdateEmployee</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FUpdateEmployee</servlet-name>
+		<display-name>FUpdateEmployee</display-name>
+		<description></description>
+		<servlet-class>Servlets.FUpdateEmployee</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>addEmployee</servlet-name>
+		<display-name>addEmployee</display-name>
+		<description></description>
+		<servlet-class>Servlets.addEmployee</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>inscription</servlet-name>
+		<display-name>inscription</display-name>
+		<description></description>
+		<servlet-class>Servlets.inscription</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/TestServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestServletDeux</servlet-name>
+		<url-pattern>/TestServletDeux</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestServletSql</servlet-name>
+		<url-pattern>/TestServletSql</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestServletBase</servlet-name>
+		<url-pattern>/TestServletBase</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>A</servlet-name>
+		<url-pattern>/A</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>B</servlet-name>
+		<url-pattern>/B</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servletAfficher</servlet-name>
+		<url-pattern>/servletAfficher</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>session</servlet-name>
+		<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteEmployee</servlet-name>
+		<url-pattern>/DeleteEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateEmployee</servlet-name>
+		<url-pattern>/UpdateEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FUpdateEmployee</servlet-name>
+		<url-pattern>/FUpdateEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addEmployee</servlet-name>
+		<url-pattern>/addEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>inscription</servlet-name>
+		<url-pattern>/inscription</url-pattern>
+	</servlet-mapping>
+	
+
+	<welcome-file-list>
+		<welcome-file>afficherTable.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
